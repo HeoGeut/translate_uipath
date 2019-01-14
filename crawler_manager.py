@@ -4,29 +4,57 @@ from bs4 import BeautifulSoup
 import json
 
 url_base = "http://www.phonecodi.net/front/productlist.php?code="
-url_category = {'skin_case': '004',
-                'protect_screen': '005',
-                'charge/cable': '006',
-                'battery/memory': '007',
-                'bluetooth/earphone': '008',
-                'gender/cradle': '009',
-                'string/pen': '010',
-                'etc_acc': '011',
-                'event_zone': '012'
-                }
+url_category = {
+    '핸드폰 케이스': '004',
+    '액정보호 용품': '005',
+    '충전기/케이블': '006',
+    '배터리/메모리': '007',
+    '블루투스/이어폰': '008',
+    '충전젠더/거치대': '009',
+    '폰줄/목줄/터치펜': '010',
+    '기타 악세사리': '011',
+    '이벤트존': '012'
+}
 
-url_category_sub = {'phone_case': {'soft_case': '001', 'hard_case': '002', 'skin_case': '003'},
-                    'protect_screen': '005',
-                    'charge/cable': '006',
-                    'battery/memory': '007',
-                    'bluetooth/earphone': '008',
-                    'gender/cradle': '009',
-                    'string/pen': '010',
-                    'etc_acc': '011',
-                    'event_zone': '012'
-                    }
+url_category_sub = {
+    '핸드폰 케이스': {'SOFT 케이스': '001', '하드 케이스': '002', '가죽 케이스': '003'},
+    '액정보호 용품': '005',
+    '충전기/케이블': '006',
+    '배터리/메모리': '007',
+    '블루투스/이어폰': '008',
+    '충전젠더/거치대': '009',
+    '폰줄/목줄/터치펜': '010',
+    '기타 악세사리': '011',
+    '이벤트존': '012'
+}
 
-url_category_detail = { 'soft_case' : {}
+url_category_detail = {
+    'SOFT 케이스': {
+        '칼라 젤리 케이스': '002',
+        '캐릭터 젤리 케이스': '003',
+        '투톤 젤리케이스': '005',
+        'TPU 강화 이중재질': '007',
+        '태블릿 SOFT 케이스': '008',
+        '하드 젤리 케이스': '009',
+        '미러 젤리 케이스': '011',
+        '투명 젤리 케이스': '012',
+        '인쇄 젤리 케이스': '013'
+    },
+    '하드 케이스': {
+        '투명 하드케이스': '002',
+        'SF 칼라 하드케이스': '003',
+        'UV 코팅 하드케이스': '004',
+        '범퍼 하드 케이스': '005',
+        '일러스트 하드 케이스': '006',
+        '프리미엄 하드 케이스': '008',
+        '이중재질 하드 케이스': '009',
+        '태블릿 하드 케이스': '010',
+
+
+    }
+
+
+
 
 }
 
